@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="Project page for ActionDiff: Diffusion-Based Action Recognition Generalizes to Untrained Domains">
+    <meta property="og:title" content="Diffusion-Based Action Recognition Generalizes to Untrained Domains"/>
+    <meta property="og:description" content="Project page for ActionDiff: Diffusion-Based Action Recognition Generalizes to Untrained Domains"/>
+    <meta property="og:url" content="http://www.vision.caltech.edu/actiondiff/"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="http://www.vision.caltech.edu/actiondiff/static/images/teaser.png"/>
+    <meta property="og:image:width" content="1083"/>
+    <meta property="og:image:height" content="600"/>
+
+
+    <meta name="twitter:title" content="Diffusion-Based Action Recognition Generalizes to Untrained Domains">
+    <meta name="twitter:description" content="Project page for ActionDiff: Diffusion-Based Action Recognition Generalizes to Untrained Domains">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="http://www.vision.caltech.edu/actiondiff/static/images/teaser.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="diffusion, action recognition, domain shift, zero-shot, foundation model, semantics,
+    stable diffusion, perception, computer vision, video, stable video diffusion, svd, large language and vision models,
+    LLVM, animal kingdom, charades ego, hmdb, ucf">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>ActionDiff</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon_vision_lab.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <style>
+        /* Style for the container that holds the images */
+        .image-container {
+            display: flex; /* Use flexbox to place images side by side */
+            justify-content: space-between; /* Space between the images */
+        }
+
+        /* Style for individual images */
+        .image-container img {
+            width: 90%; /* Adjust the width as needed */
+            max-width: 100%; /* Ensure images don't exceed their original size */
+        }
+    </style>
+
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Diffusion-Based Action Recognition Generalizes to Untrained Domains</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                            <a href="https://rogeriojr.com/" target="_blank">Rog&eacute;rio Guimar&atilde;es</a><sup>*</sup>,
+                            <a href="https://scholar.google.com/citations?user=8luglJkAAAAJ&hl=en" target="_blank">Frank Xiao</a><sup>*</sup>,
+                            <a href="https://www.vision.caltech.edu/" target="_blank">Pietro Perona</a>,
+                            <a href="https://damaggu.github.io/" target="_blank"> Markus Marks</a>
+                        </span>
+
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"> California Institute of Technology</span>
+                        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- Arxiv PDF link -->
+                            <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2509.08908" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                            <!-- Github link -->
+                            <span class="link-block">
+                    <a href="https://github.com/frankyaoxiao/ActionDiff" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
+                  <a href="https://arxiv.org/abs/2509.08908" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview Image -->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <div class="hero-body">
+                    <!-- Your image here -->
+                    <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
+                    <h2 class="subtitle has-text-justified">
+                        <b>ActionDiff.</b> Our method uses the highly semantic features extracted from a frozen
+                        Stable Video Diffusion backbone to perform action recognition in tasks that require
+                        generalization across different domains. Our model generalizes to new agents (species),
+                        view-angles ($1^{st}$ to $3^{rd}$), and contexts (sports vs. movies) that were not
+                        present in the training data.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3">Abstract</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <div class="content has-text-justified">
+                    <p>
+                        Humans can recognize the same actions despite large context and viewpoint variations, such as
+                        ifferences between species (walking in spiders vs. horses), viewpoints (egocentric vs.
+                        third-person), and contexts (real life vs movies). <br><br>
+
+                        Current deep learning models struggle with such generalization. We propose using features
+                        generated by a Vision Diffusion Model (VDM), aggregated via a transformer, to achieve human-like
+                        action recognition across these challenging conditions. <br><br>
+
+                        We find that generalization is enhanced by the use of a model conditioned on earlier timesteps
+                        of the diffusion process to highlight semantic information over pixel level details in the
+                        extracted features. We experimentally explore the generalization properties of our approach in
+                        classifying actions across animal species, across different viewing angles, and different
+                        recording contexts. <br><br>
+
+                        Our model sets a new state-of-the-art across all three generalization
+                        benchmarks, bringing machine action recognition closer to human-like robustness.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Paper Tasks -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3">Domain Shift Tasks</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Tasks -->
+
+<!--  Tasks-->
+<section class="section hero is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <img src="static/images/tasks.png" alt="MY ALT TEXT"/>
+                <div class="content has-text-justified">
+                    <p> <b>Domain Shift Tasks.</b> We present the three domain-shift tasks we use to measure the
+                        generalization performance of ActionDiff. <b>Left:</b> samples from the Animal Kingdom dataset,
+                        which contains examples of actions (eating and swimming) being performed across different animal
+                        species. <b>Middle:</b> samples from CharadesEgo, which contain examples of the same actions
+                        (typing and grabbing a pillow) captured from first and third person perspective. <b>Right:</b>
+                        Samples from UCF-101 (top) and HMDB51 (bottom), which contain examples of the same actions
+                        (shooting a bow and kicking a ball) in different contexts. UCF has mostly amateur sports
+                        footage, while HMDB also includes other sources ( such as movies, TV, and video games.)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Paper Method -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3">Methods</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Method -->
+
+<!--  Architecture-->
+<section class="section hero is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <img src="static/images/methods.png" alt="MY ALT TEXT"/>
+                <div class="content has-text-justified">
+                    <p><b>Overview of our architecture.</b> We split a longer video into shorter segments and extract
+                        frame features for each video segment using a frozen Stable Video Diffusion backbone. The video
+                        segment frames are encoded into the diffusion latent space by $\mathcal{E}$. They are processed
+                        together by the denoiser $\epsilon_\theta$, in a process guided by a condition $c$ (the middle
+                        frame $x^{mid}$ embedded by a CLIP encoder $\tau_\theta$) through cross-attention. We extract
+                        the outputs of a middle layer $l$ in the denoiser $\epsilon_\theta$, and average pool the
+                        outputs across the spatial dimensions to end up with a feature vector for each frame in the
+                        video segment. We then collect the sequence of frame features from all video segments and pass
+                        them through a learned transformer encoder and a learned class token concatenated to the
+                        beginning of the sequence. From the output, we apply a linear layer and a normalization
+                        function $\sigma$ to the class token to obtain probabilities $\hat{y}$ for each action class.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Paper results -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3">Results</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper results -->
+
+
+<!--  Results-->
+<section class="section hero is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+<!--                <h2 class="title is-4">Tasks</h2>-->
+                <div class="image-container">
+                    <div>
+                        <h2 class="title is-4">Animal Kingdom</h2>
+                        <img src="static/images/results-AK.png" alt="MY ALT TEXT"/>
+                    </div>
+                    <div>
+                        <h2 class="title is-4">Charades-Ego</h2>
+                        <img src="static/images/results-CE.png" alt="MY ALT TEXT"/>
+                    </div>
+                    <div>
+                        <h2 class="title is-4">UCF-HMDB</h2>
+                        <img src="static/images/results-UH.png" alt="MY ALT TEXT"/>
+                    </div>
+                </div>
+                <div class="content has-text-justified">
+                    <p> <b>Animal Kingdom dataset.</b> ActionDiff beats the SOTA and other self-supervised frozen
+                        backbones in action recognition both on the full dataset and the unseen species partition,
+                        in which the species used at test time were not seen during training.<br><br>
+
+                        <b>Charades-Ego dataset.</b> ActionDiff beats the SOTA and other self-supervised frozen
+                        backbones in action recognition on $1^{st}$ to $1^{st}$ person and $3^{rd}$ to $1^{st}$
+                        person viewpoint.<br><br>
+
+                        <b>UCF101 (U) to HMDB51 (H) domain shift and vice-versa.</b> ActionDiff beats the previous SOTA
+                        and other self-supervised frozen backbones when trained on any of the datasets and tested on the
+                        other.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Paper analysis -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3">Analysis</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper analysis -->
+
+
+<!--  Analysis-->
+<section class="section hero is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <img src="static/images/grid-search.png" alt="MY ALT TEXT"/>
+                <div class="content has-text-justified">
+                    <p> <b>Diffusion Layer and Timestep Conditioning.</b> We test the performance of our model with
+                        diffusion features extracted from different layers and conditioned on different timesteps to
+                        analyze the difference between the best features for in- and out-of-domain tasks. We use two
+                        example tasks where the model can train on the same train set for in and out-of-domain tasks.
+                        Each heatmap shows the results (mAP for CharadesEgo and acc for HMDB to UCF) for each layer
+                        (y-axis) and timestep (x-axis) on a task, and the plot below each heatmap shows the best result
+                        across layers obtained for each timestep. When we analyze which features are best for in-domain
+                        vs out-of-domain testing, we see a shift toward those obtained with earlier timesteps when we
+                        test out-of-domain. Layers are indexed in the direction from the input to the bottleneck, and
+                        timesteps are indexed in the direction of the generative process (reverse diffusion).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BibTex citation -->
+<!--<section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--        <h2 class="title">BibTeX</h2>-->
+<!--        <pre><code>-->
+<!--@article{guimaraes2025actiondiff,-->
+<!--  title={Text-Image Alignment for Diffusion-Based Perception},-->
+<!--  author={Guimaraes, Rogerio and Xiao, Frank and Marks, Markus and Perona, Pietro},-->
+<!--  year={2025},-->
+<!--  month={September},-->
+<!--}-->
+<!--        </code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+<!--End BibTex citation -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                target="_blank">Nerfies</a> project
+                        page. This website is licensed under a <a rel="license"
+                                                                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                                  target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
